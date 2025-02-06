@@ -1,27 +1,42 @@
 import { Box, Image, HStack, Link, Text, VStack, Heading } from "@chakra-ui/react";
 import mySelf from "./assets/images/mySelf.png";
+import css from './assets/images/css.png';
+import cypress from './assets/images/cypress.png';
+import express from './assets/images/express.png';
+import github from './assets/images/github.png';
+import git from './assets/images/git.png';
+import html from './assets/images/html.png';
+import jest from './assets/images/jest.png';
+import mongodb from './assets/images/mongodb.png';
+import next from './assets/images/next.png';
+import node from './assets/images/node.png';
+import postgres from './assets/images/postgres.png';
+import prisma from './assets/images/prisma.png';
+import react from './assets/images/react.png';
+import typescript from './assets/images/typescript.png';
+import aws from './assets/images/aws.png';
+
 // const mySelf = require("./assets/images/mySelf.jpg")
 
 function App() {
   const technologies = [
-    "HTML5",
-    "CSS3",
-    "React.js",
-    "Next.js",
-    "Styled-components",
-    "Chakra-ui",
-    "Node.js",
-    "Express",
-    "TypeScript",
-    "MySQL",
-    "PostgreSQL",
-    "MongoDB",
-    "Prisma ORM",
-    "Jest",
-    "Cypress",
-    "GitHub",
-    "Git"
+    { name: "HTML5", image: html },
+    { name: "CSS3", image: css },
+    { name: "React.js", image: react },
+    { name: "Next.js", image: next },
+    { name: "Node.js", image: node },
+    { name: "TypeScript", image: typescript },
+    { name: "PostgreSQL", image: postgres },
+    { name: "MongoDB", image: mongodb },
+    { name: "Prisma ORM", image: prisma },
+    { name: "Jest", image: jest },
+    { name: "Cypress", image: cypress },
+    { name: "GitHub", image: github },
+    { name: "Git", image: git }, 
+    { name: "AWS", image: aws}
   ];
+  
+  
 
   return (
     <VStack>
@@ -81,7 +96,31 @@ function App() {
           Tecnologias que conheço
         </Heading>
         <HStack>
-          
+          {technologies.map((technology, index)=>(
+            <VStack 
+              justifyContent="space-between"
+              key={technology.name} 
+              w="200px" 
+              h="200px" 
+              bgColor="#6e6e6e"
+            >
+              <VStack 
+              h="100%"
+              w="100%"
+              justifyContent="center"
+              >
+
+              <Image 
+                src={technology.image} 
+                width="150px"
+                padding="10px"
+                />
+              </VStack>
+              <Text>
+                {technology.name}
+              </Text>
+            </VStack>
+          ))}
         </HStack>
       </VStack>
 
