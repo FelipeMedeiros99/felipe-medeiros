@@ -1,21 +1,23 @@
 import { Box, Image, HStack, Link, Text, VStack, Heading, Button } from "@chakra-ui/react";
+
 import curriculo from "./assets/documents/curriculo.pdf";
-import mySelf from "./assets/images/mySelf.png";
-import css from './assets/images/css.png';
-import cypress from './assets/images/cypress.png';
-import express from './assets/images/express.png';
-import github from './assets/images/github.png';
-import git from './assets/images/git.png';
-import html from './assets/images/html.png';
-import jest from './assets/images/jest.png';
-import mongodb from './assets/images/mongodb.png';
-import next from './assets/images/next.png';
-import node from './assets/images/node.png';
-import postgres from './assets/images/postgres.png';
-import prisma from './assets/images/prisma.png';
-import react from './assets/images/react.png';
-import typescript from './assets/images/typescript.png';
-import aws from './assets/images/aws.png';
+import mySelf from "./assets/images/profileImages/mySelf.png";
+import css from './assets/images/technologiesImages/css.png';
+import cypress from './assets/images/technologiesImages/cypress.png';
+import express from './assets/images/technologiesImages/express.png';
+import github from './assets/images/technologiesImages/github.png';
+import git from './assets/images/technologiesImages/git.png';
+import html from './assets/images/technologiesImages/html.png';
+import jest from './assets/images/technologiesImages/jest.png';
+import mongodb from './assets/images/technologiesImages/mongodb.png';
+import next from './assets/images/technologiesImages/next.png';
+import node from './assets/images/technologiesImages/node.png';
+import postgres from './assets/images/technologiesImages/postgres.png';
+import prisma from './assets/images/technologiesImages/prisma.png';
+import react from './assets/images/technologiesImages/react.png';
+import typescript from './assets/images/technologiesImages/typescript.png';
+import aws from './assets/images/technologiesImages/aws.png';
+import trackIt from './assets/images/projectsImages/track-it.svg';
 
 // const mySelf = require("./assets/images/mySelf.jpg")
 
@@ -37,12 +39,24 @@ function App() {
     { name: "AWS", image: aws }
   ];
 
+  const projects = [
+    {
+      name: "track-it",
+      img: trackIt,
+      url: "https://track-it-seven-amber.vercel.app/",
+      description: "",
+      technologies: []
+    }
+  ]
+
+
+
   return (
     <VStack>
 
       <HStack>
         <Link href="#about">Sobre</Link>
-        <Link>Projetos</Link>
+        <Link href="#projects">Projetos</Link>
         <Link>Contatos</Link>
       </HStack>
 
@@ -88,7 +102,7 @@ function App() {
           Além das minhas habilidades técnicas, sou uma pessoa proativa e colaborativa, me dou muito bem em trabalhos em equipe e busco sempre entender as necessidades do usuário e entregar soluções que agreguem valor real ao negócio. Tenho forte capacidade de adaptação e estou sempre em busca de novos desafios para aprimorar meu conhecimento.
         </Text>
 
-        <Link 
+        <Link
           href={curriculo}
           download
         >
@@ -128,6 +142,31 @@ function App() {
               </Text>
             </VStack>
           ))}
+        </HStack>
+      </VStack>
+
+      <VStack id="projects">
+        <Heading>
+          Principais projetos
+        </Heading>
+        <HStack>
+          {
+            projects.map((project, index) => (
+              <VStack>
+                <Box>
+                  <Image src={project.img} />
+                </Box>
+                <Heading as="h2">{project.name}</Heading>
+                <Text>{project.description}</Text>
+                {project.technologies.map((technology)=>(
+                  <Box>
+                    {technology}
+                  </Box>
+                ))}
+                <Link href={project.url} target="_blank">Ver projeto</Link>
+              </VStack>
+            ))
+          }
         </HStack>
       </VStack>
 
