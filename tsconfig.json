@@ -17,5 +17,5 @@
     "isolatedModules": true,
     "jsx": "react-jsx"
   },
-  "include": ["src", "node_modules/react-scripts/lib/react-app.d.ts"]
+  "include": ["src", "node_modules/react-scripts/lib/react-app.d.ts", "tspdf.d.ts"]
 }

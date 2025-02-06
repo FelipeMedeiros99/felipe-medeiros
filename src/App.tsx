@@ -1,4 +1,5 @@
-import { Box, Image, HStack, Link, Text, VStack, Heading } from "@chakra-ui/react";
+import { Box, Image, HStack, Link, Text, VStack, Heading, Button } from "@chakra-ui/react";
+import curriculo from "./assets/documents/curriculo.pdf";
 import mySelf from "./assets/images/mySelf.png";
 import css from './assets/images/css.png';
 import cypress from './assets/images/cypress.png';
@@ -32,11 +33,9 @@ function App() {
     { name: "Jest", image: jest },
     { name: "Cypress", image: cypress },
     { name: "GitHub", image: github },
-    { name: "Git", image: git }, 
-    { name: "AWS", image: aws}
+    { name: "Git", image: git },
+    { name: "AWS", image: aws }
   ];
-  
-  
 
   return (
     <VStack>
@@ -68,8 +67,8 @@ function App() {
         </Box>
       </HStack>
 
-      <VStack 
-      align="left"
+      <VStack
+        align="left"
       >
         <Heading
           id="about"
@@ -89,6 +88,15 @@ function App() {
           Além das minhas habilidades técnicas, sou uma pessoa proativa e colaborativa, me dou muito bem em trabalhos em equipe e busco sempre entender as necessidades do usuário e entregar soluções que agreguem valor real ao negócio. Tenho forte capacidade de adaptação e estou sempre em busca de novos desafios para aprimorar meu conhecimento.
         </Text>
 
+        <Link 
+          href={curriculo}
+          download
+        >
+          <Button>
+            Baixar CV
+          </Button>
+        </Link>
+
       </VStack>
 
       <VStack>
@@ -96,24 +104,23 @@ function App() {
           Tecnologias que conheço
         </Heading>
         <HStack>
-          {technologies.map((technology, index)=>(
-            <VStack 
+          {technologies.map((technology, index) => (
+            <VStack
               justifyContent="space-between"
-              key={technology.name} 
-              w="200px" 
-              h="200px" 
+              key={technology.name}
+              w="200px"
+              h="200px"
               bgColor="#6e6e6e"
             >
-              <VStack 
-              h="100%"
-              w="100%"
-              justifyContent="center"
+              <VStack
+                h="100%"
+                w="100%"
+                justifyContent="center"
               >
-
-              <Image 
-                src={technology.image} 
-                width="150px"
-                padding="10px"
+                <Image
+                  src={technology.image}
+                  width="150px"
+                  padding="10px"
                 />
               </VStack>
               <Text>
