@@ -1,18 +1,22 @@
-import { HStack, Link, Box } from "@chakra-ui/react"
+import { HStack, Link } from "@chakra-ui/react";
+import { FcInfo, FcFolder, FcPhone } from "react-icons/fc";
 
 export default function NavBar() {
   const hrefs = [
     {
       title: "Sobre",
-      id: "#about"
+      id: "#about",
+      icon: <FcInfo /> 
     },
     {
       title: "Projetos",
-      id: "#projects"
+      id: "#projects",
+      icon: <FcFolder />
     },
     {
       title: "Contatos",
-      id: "#contacts"
+      id: "#contacts",
+      icon: <FcPhone />
     }
   ]
   return (
@@ -29,13 +33,19 @@ export default function NavBar() {
         {
           hrefs.map((href)=>(
             <Link 
+              key={href.id}
               href={href.id}
               fontWeight="700"
               fontSize="20px"
-              textDecor="underline"
-              _hover={{cursor: "pointer", fontSize: "24px"}}
+              display="flex"
+              _hover={{
+                cursor: "pointer", 
+                fontSize: "24px",
+                textDecor: "none"
+              }}
             >
               {href.title}
+              {href.icon}
             </Link>
           ))
         }
