@@ -11,8 +11,9 @@ export default function ProfileSection() {
       w="100%"
       h="100%"
       justifyContent="flex-start"
-      bgColor="black"
-
+      bgGradient="to-t" 
+      gradientFrom="#514e4e"
+      gradientTo="black"
     >
       <Box
         h="100%"
