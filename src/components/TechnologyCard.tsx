@@ -25,6 +25,7 @@ export default function TechnologyCard() {
       width="100%"
       padding={"3rem 10rem 3rem 10rem"}
       backgroundColor="#414141"
+      scrollMarginTop="5rem"
     >
     <Heading>
       Tecnologias que conheço

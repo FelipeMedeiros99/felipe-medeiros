@@ -9,6 +9,7 @@ export default function AboutSection() {
       textAlign="justify"
       padding={"3rem 10rem 3rem 10rem"}
       bgColor="#1d1d1f"
+      scrollMarginTop="5rem"
     >
       <Heading as="h2">
         Sobre
