@@ -38,6 +38,7 @@ export default function AboutSection() {
       <Link
         href="./documents/curriculo.pdf"
         download
+        height="4rem"
       >
         <Button 
           bgColor="#e6ff4a"
@@ -45,6 +46,10 @@ export default function AboutSection() {
           height="3rem"
           fontSize="1.125rem"
           marginTop="2rem"
+          _hover={{
+            width: "11rem",
+            height: "4rem"
+          }}
         >
           Baixar CV
           <FaDownload />

@@ -93,20 +93,43 @@ export default function Projects() {
                 justifyContent="space-around"
                 position="absolute"
                 bottom="1.5rem"
+                h="3rem"
               >
                 {
                   project.url &&
-                  <Link href={project.url} target="_blank">
+                  <Link 
+                    alignItems="center"
+                    justifyContent="center"
+                    href={project.url} 
+                    target="_blank"
+                    w="9rem"
+                  >
                     <Button
                       w="8rem"
+                      h="2.5rem"
+                      _hover={{
+                        width: "9rem",
+                        h: "3rem"
+                      }}
                     >
                       <MdOutlineLink /> Ver site
                     </Button>
                   </Link>
                 }
-                <Link href={project.github} target="_blank">
+                <Link 
+                  alignItems="center"
+                  justifyContent="center"
+                  href={project.github} 
+                  target="_blank"
+                  w="9rem"
+                >
                   <Button
-                    w="8rem"
+                     w="8rem"
+                     h="2.5rem"
+                     _hover={{
+                       width: "9rem",
+                       h: "3rem"
+                     }}
                   >
                     <FaGithub /> Ver projeto
                   </Button>
