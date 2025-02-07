@@ -1,43 +1,27 @@
 import { Box, Image, HStack, Link, Text, VStack, Heading, Button } from "@chakra-ui/react";
 
-import css from '../assets/images/technologiesImages/css.png';
-import cypress from '../assets/images/technologiesImages/cypress.png';
-import express from '../assets/images/technologiesImages/express.png';
-import github from '../assets/images/technologiesImages/github.png';
-import git from '../assets/images/technologiesImages/git.png';
-import html from '../assets/images/technologiesImages/html.png';
-import jest from '../assets/images/technologiesImages/jest.png';
-import mongodb from '../assets/images/technologiesImages/mongodb.png';
-import next from '../assets/images/technologiesImages/next.png';
-import node from '../assets/images/technologiesImages/node.png';
-import postgres from '../assets/images/technologiesImages/postgres.png';
-import prisma from '../assets/images/technologiesImages/prisma.png';
-import react from '../assets/images/technologiesImages/react.png';
-import typescript from '../assets/images/technologiesImages/typescript.png';
-import aws from '../assets/images/technologiesImages/aws.png';
-
-
 export default function TechnologyCard() {
   const technologies = [
-    { name: "HTML5", image: html },
-    { name: "CSS3", image: css },
-    { name: "React.js", image: react },
-    { name: "Next.js", image: next },
-    { name: "Node.js", image: node },
-    { name: "TypeScript", image: typescript },
-    { name: "PostgreSQL", image: postgres },
-    { name: "MongoDB", image: mongodb },
-    { name: "Prisma ORM", image: prisma },
-    { name: "Jest", image: jest },
-    { name: "Cypress", image: cypress },
-    { name: "GitHub", image: github },
-    { name: "Git", image: git },
-    { name: "AWS", image: aws }
+    { name: "HTML5", image: "/images/technologiesImages/html.png" },
+    { name: "CSS3", image: "/images/technologiesImages/css.png" },
+    { name: "React.js", image: "/images/technologiesImages/react.png" },
+    { name: "Next.js", image: "/images/technologiesImages/next.png" },
+    { name: "Node.js", image: "/images/technologiesImages/node.png" },
+    { name: "TypeScript", image: "/images/technologiesImages/typescript.png" },
+    { name: "PostgreSQL", image: "/images/technologiesImages/postgres.png" },
+    { name: "MongoDB", image: "/images/technologiesImages/mongodb.png" },
+    { name: "Prisma ORM", image: "/images/technologiesImages/prisma.png" },
+    { name: "Jest", image: "/images/technologiesImages/jest.png" },
+    { name: "Cypress", image: "/images/technologiesImages/cypress.png" },
+    { name: "GitHub", image: "/images/technologiesImages/github.png" },
+    { name: "Git", image: "/images/technologiesImages/git.png" },
+    { name: "AWS", image: "/images/technologiesImages/aws.png" }
   ];
 
   return (
     
     <VStack
+      id="tech"
       width="100%"
       padding={"3rem 10rem 3rem 10rem"}
       backgroundColor="#414141"

@@ -1,8 +1,6 @@
 import { Link, Text, VStack, Heading, Button } from "@chakra-ui/react";
 import { FaDownload } from "react-icons/fa";
 
-import curriculo from "../assets/documents/curriculo.pdf";
-
 export default function AboutSection() {
   return (
     <VStack
@@ -37,7 +35,7 @@ export default function AboutSection() {
       </Text>
 
       <Link
-        href={curriculo}
+        href="./documents/curriculo.pdf"
         download
       >
         <Button 
@@ -45,6 +43,7 @@ export default function AboutSection() {
           width="10rem"
           height="3rem"
           fontSize="1.125rem"
+          marginTop="2rem"
         >
           Baixar CV
           <FaDownload />

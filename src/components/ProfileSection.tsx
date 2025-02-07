@@ -1,9 +1,5 @@
 import { HStack, Image, VStack, Heading, Box, Text } from "@chakra-ui/react"
 
-
-import mySelf from "../assets/images/profileImages/mySelf.png";
-
-
 export default function ProfileSection() {
   return (
     <HStack 
@@ -19,7 +15,7 @@ export default function ProfileSection() {
         h="100%"
       >
         <Image
-          src={mySelf}
+          src="./images/profileImages/mySelf.png"
         />
       </Box>
       <VStack 

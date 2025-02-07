@@ -1,17 +1,10 @@
 import { Box, Image, HStack, Link, Text, VStack, Heading } from "@chakra-ui/react";
 
-
-import trackIt from '../assets/images/projectsImages/track-it.svg';
-import schoolSpreadsheet from '../assets/images/projectsImages/school-spreadsheet.png';
-import inaed from "../assets/images/projectsImages/inaed_logo.png";
-import tambau from "../assets/images/projectsImages/tambau.png";
-import cinema from "../assets/images/projectsImages/cinema.png";
-
 export default function Projects() {
   const projects = [
     {
       name: "track-it",
-      img: trackIt,
+      img: './images/projectsImages/track-it.svg',
       url: "https://track-it-seven-amber.vercel.app/",
       description: `
       O Sistema de Gerenciamento de Rotina é uma ferramenta desenvolvida para auxiliar no controle e validação de tarefas diárias, garantindo maior organização, produtividade e eficiência.
@@ -22,7 +15,7 @@ export default function Projects() {
     },
     {
       name: "Agenda escolar",
-      img: schoolSpreadsheet,
+      img: './images/projectsImages/school-spreadsheet.png',
       url: "http://school-spreadsheet-front.s3-website-sa-east-1.amazonaws.com/sign-in",
       description: `
         O Sistema de Gerenciamento de Alunos é uma aplicação eficiente para armazenar e organizar informações acadêmicas, permitindo um controle preciso dos estudantes.
@@ -33,7 +26,7 @@ export default function Projects() {
     },
     {
       name: "Agenda escolar API",
-      img: schoolSpreadsheet,
+      img: "./images/projectsImages/school-spreadsheet.png",
       url: "",
       description: `
       Esta API foi desenvolvida para gerenciar o cadastro de estudantes e usuários, permitindo operações essenciais como criação, edição e exclusão de alunos, garantindo controle total aos usuários autenticados.
@@ -45,7 +38,7 @@ export default function Projects() {
     },
     {
       name: "Gerenciamento de Cursos",
-      img: inaed,
+      img: "./images/projectsImages/inaed_logo.png",
       url: "https://gerenciamento-de-cursos-frontend-1muo.vercel.app/",
       description: `
       Bem-vindo ao E-commerce de Cursos, uma plataforma intuitiva e eficiente desenvolvida para facilitar a compra e gerenciamento de cursos online.
@@ -56,7 +49,7 @@ export default function Projects() {
     },
     {
       name: "Geremciamento de cursos API",
-      img: inaed,
+      img: "./images/projectsImages/inaed_logo.png",
       url: "",
       description: `  
       Bem-vindo à API de gerenciamento de cursos! Esta API foi desenvolvida com NestJS e oferece endpoints para o gerenciamento de cursos, usuario e carrinho de compras
@@ -66,7 +59,7 @@ export default function Projects() {
     },
     {
       name: "Cardápio Tambaú",
-      img: tambau,
+      img: "./images/projectsImages/tambau.png",
       url: "https://cardapio-tambau.vercel.app/",
       description: `
         O Cardápio Digital é uma solução moderna e interativa para restaurantes, bares e lanchonetes que desejam oferecer uma experiência mais prática e eficiente aos seus clientes.
@@ -77,7 +70,7 @@ export default function Projects() {
     },
     {
       name: "CineFlex",
-      img: cinema,
+      img: "./images/projectsImages/cinema.png",
       url: "https://cine-flex-git-main-felipe-medeiros-projects-86f8f20a.vercel.app/",
       description: `
       O Sistema de Compra de Ingressos para Cinema é uma plataforma intuitiva e eficiente que permite aos usuários selecionar filmes, escolher assentos e adquirir ingressos online de forma prática e segura.

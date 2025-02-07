@@ -1,10 +1,10 @@
 import { HStack, Link, Image, Box } from "@chakra-ui/react";
 import { IoIosInformationCircleOutline } from "react-icons/io";
+import { FaReact } from "react-icons/fa";
 import { FaHome } from "react-icons/fa";
 import { FaRegFolder } from "react-icons/fa";
 import { MdOutlinePhone } from "react-icons/md";
 
-import simbol from "../assets/images/profileImages/simbol.png"
 
 export default function NavBar() {
   const hrefs = [
@@ -17,6 +17,11 @@ export default function NavBar() {
       title: "Sobre",
       id: "#about",
       icon: <IoIosInformationCircleOutline /> 
+    },
+    {
+      title: "Tecnologias",
+      id: "#tech",
+      icon: <FaReact /> 
     },
     {
       title: "Projetos",
@@ -46,11 +51,11 @@ export default function NavBar() {
         width="5rem"
         padding="1rem"
       >
-      <Image src={simbol}></Image>
+      <Image src="./images/profileImages/simbol.png"></Image>
       </Box>
 
       <HStack
-        w="500px"
+        w="45rem"
         justifyContent="space-around"
         padding="0 1rem 0 1rem"
         
