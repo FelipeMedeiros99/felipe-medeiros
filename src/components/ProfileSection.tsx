@@ -6,12 +6,13 @@ import mySelf from "../assets/images/profileImages/mySelf.png";
 
 export default function ProfileSection() {
   return (
-    <HStack>
+    <HStack id="profile">
       <Image
         src={mySelf}
         h="300px"
       />
-      <Box >
+      <Box 
+      >
         <Text>
           Olá!
         </Text>
