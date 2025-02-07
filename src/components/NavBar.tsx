@@ -1,39 +1,8 @@
 import { HStack, Link, Image, Box } from "@chakra-ui/react";
-import { IoIosInformationCircleOutline } from "react-icons/io";
-import { FaReact } from "react-icons/fa";
-import { FaHome } from "react-icons/fa";
-import { FaRegFolder } from "react-icons/fa";
-import { MdOutlinePhone } from "react-icons/md";
 
+import { hrefs } from "../data";
 
 export default function NavBar() {
-  const hrefs = [
-    {
-      title: "Início",
-      id: "#profile",
-      icon: <FaHome /> 
-    },
-    {
-      title: "Sobre",
-      id: "#about",
-      icon: <IoIosInformationCircleOutline /> 
-    },
-    {
-      title: "Tecnologias",
-      id: "#tech",
-      icon: <FaReact /> 
-    },
-    {
-      title: "Projetos",
-      id: "#projects",
-      icon: <FaRegFolder />
-    },
-    {
-      title: "Contatos",
-      id: "#contacts",
-      icon: <MdOutlinePhone />
-    }
-  ]
   return (
     <HStack 
       w="100%"

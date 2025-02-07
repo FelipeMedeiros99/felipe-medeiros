@@ -1,23 +1,23 @@
 import { Box, Image, HStack, Link, Text, VStack, Heading, Button } from "@chakra-ui/react";
 
-export default function TechnologyCard() {
-  const technologies = [
-    { name: "HTML5", image: "/images/technologiesImages/html.png" },
-    { name: "CSS3", image: "/images/technologiesImages/css.png" },
-    { name: "React.js", image: "/images/technologiesImages/react.png" },
-    { name: "Next.js", image: "/images/technologiesImages/next.png" },
-    { name: "Node.js", image: "/images/technologiesImages/node.png" },
-    { name: "TypeScript", image: "/images/technologiesImages/typescript.png" },
-    { name: "PostgreSQL", image: "/images/technologiesImages/postgres.png" },
-    { name: "MongoDB", image: "/images/technologiesImages/mongodb.png" },
-    { name: "Prisma ORM", image: "/images/technologiesImages/prisma.png" },
-    { name: "Jest", image: "/images/technologiesImages/jest.png" },
-    { name: "Cypress", image: "/images/technologiesImages/cypress.png" },
-    { name: "GitHub", image: "/images/technologiesImages/github.png" },
-    { name: "Git", image: "/images/technologiesImages/git.png" },
-    { name: "AWS", image: "/images/technologiesImages/aws.png" }
-  ];
+const technologies = [
+  { name: "HTML5", image: "/images/technologiesImages/html.png" },
+  { name: "CSS3", image: "/images/technologiesImages/css.png" },
+  { name: "React.js", image: "/images/technologiesImages/react.png" },
+  { name: "Next.js", image: "/images/technologiesImages/next.png" },
+  { name: "Node.js", image: "/images/technologiesImages/node.png" },
+  { name: "TypeScript", image: "/images/technologiesImages/typescript.png" },
+  { name: "PostgreSQL", image: "/images/technologiesImages/postgres.png" },
+  { name: "MongoDB", image: "/images/technologiesImages/mongodb.png" },
+  { name: "Prisma ORM", image: "/images/technologiesImages/prisma.png" },
+  { name: "Jest", image: "/images/technologiesImages/jest.png" },
+  { name: "Cypress", image: "/images/technologiesImages/cypress.png" },
+  { name: "GitHub", image: "/images/technologiesImages/github.png" },
+  { name: "Git", image: "/images/technologiesImages/git.png" },
+  { name: "AWS", image: "/images/technologiesImages/aws.png" }
+];
 
+export default function TechnologyCard() {
   return (
     
     <VStack

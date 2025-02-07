@@ -1,40 +1,49 @@
 import { Image, HStack, Link, VStack, Heading } from "@chakra-ui/react";
 
+import { contacts } from "../data";
+
 export default function Contacts() {
-  const contacts = [
-    {
-      type: "Email",
-      url: "felipe.m.c.b.fm@gmail.com",
-      img: './images/contactsImages/gmail.png'
-    },
-    {
-      type: "Whatsapp",
-      url: "https://api.whatsapp.com/send/?phone=5598987835523&text&type=phone_number&app_absent=0",
-      img: './images/contactsImages/whatsapp.png'
-    },
-    {
-      type: "LinkedIn",
-      url: "https://www.linkedin.com/in/felipe-medeiros-fm/",
-      img: './images/contactsImages/linkedin.png'
-    },
-    {
-      type: "GitHub",
-      url: "https://github.com/FelipeMedeiros99",
-      img: './images/contactsImages/github.png'
-    },
-  ]
 
   return (
-    <VStack id="contacts">
-    <Heading as="h2">Contatos</Heading>
-    <HStack>
+    <VStack
+      id="contacts"
+      w="100%"  
+      paddingTop="2rem"
+      scrollMarginTop="5rem"
+    >
+    <Heading 
+      as="h2"
+    >
+      Contatos
+    </Heading>
+    <HStack
+      w="30rem"
+      h="10rem"
+      alignItems="center"
+      justifyContent="space-between"
+    >
 
     {contacts.map((contact, index)=>(
       <Link 
         href={contact.type==="Email"?`mailto:${contact.url}`:contact.url}
         target="_blank"
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+        w="4rem"
+        h="4rem"
+        padding="0.5rem"
+        borderRadius="50rem"
+        bgColor="white"
+        _hover={{
+          width: "5rem",
+          height: "5rem"
+        }}
       >
-        <Image src={contact.img}/>
+        <Image 
+          maxW="100%"
+          src={contact.img}
+        />
       </Link>
     ))}
     </HStack>
