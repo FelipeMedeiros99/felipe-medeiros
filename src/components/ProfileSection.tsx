@@ -9,18 +9,20 @@ export default function ProfileSection() {
     <HStack 
       id="profile"
       w="100%"
-      justifyContent="center"
+      h="100%"
+      justifyContent="flex-start"
+      bgColor="black"
+
     >
       <Box
-        h="400px"
+        h="100%"
       >
         <Image
-          h="100%"
           src={mySelf}
         />
       </Box>
       <VStack 
-        fontSize="2.5rem"
+        fontSize="5.5rem"
         h="25rem"
         display="flex"
         justifyContent="center"
@@ -33,7 +35,7 @@ export default function ProfileSection() {
           Eu sou <Text as="span" color="#8adcfb">Felipe Medeiros</Text> 
         </Heading>
         <Heading as="h1">
-          Desenvolvedor fullstack
+          Desenvolvedor web fullstack
         </Heading>
       </VStack>
     </HStack>

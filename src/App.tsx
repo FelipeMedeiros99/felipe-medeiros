@@ -14,17 +14,11 @@ function App() {
       w="100%"
     >
       <NavBar />
-      <VStack
-        w="100%"
-        maxW="65rem"
-        padding="2rem 3rem 3rem 3rem"
-      >
-        <ProfileSection />
-        <AboutSection />
-        <TechnologyCard />
-        <Projects />
-        <Contacts />
-      </VStack>
+      <ProfileSection />
+      <AboutSection />
+      <TechnologyCard />
+      <Projects />
+      <Contacts />
     </VStack>
   );
 }
