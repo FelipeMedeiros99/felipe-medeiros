@@ -32,18 +32,18 @@ export default function NavBar() {
   return (
     <HStack 
       w="100%"
-      h="80px"
+      h="5rem"
       justifyContent="space-between"
       position="fixed"
       top="0"
       backgroundColor="#8989898c"
       backdropFilter="blur(10px)"
-      padding="0 40px 0 40px"
+      padding="0 2.5rem 0 2.5rem"
     >
 
       <Box 
-        width="80px"
-        padding="5px"
+        width="5rem"
+        padding="1rem"
       >
       <Image src={simbol}></Image>
       </Box>
@@ -51,7 +51,7 @@ export default function NavBar() {
       <HStack
         w="500px"
         justifyContent="space-around"
-        padding="0 10px 0 10px"
+        padding="0 1rem 0 1rem"
         
       >
         {
@@ -60,11 +60,11 @@ export default function NavBar() {
               key={href.id}
               href={href.id}
               fontWeight="700"
-              fontSize="20px"
+              fontSize="1.25rem"
               display="flex"
               _hover={{
                 cursor: "pointer", 
-                fontSize: "24px",
+                fontSize: "1.5rem",
                 textDecor: "none"
               }}
             >

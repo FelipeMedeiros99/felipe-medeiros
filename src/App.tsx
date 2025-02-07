@@ -1,4 +1,4 @@
-import { VStack} from "@chakra-ui/react";
+import { VStack } from "@chakra-ui/react";
 
 import NavBar from "./components/NavBar";
 import ProfileSection from "./components/ProfileSection";
@@ -10,14 +10,21 @@ import Projects from "./components/Projects";
 function App() {
 
   return (
-    <VStack>
-
+    <VStack
+      w="100%"
+    >
       <NavBar />
-      <ProfileSection />
-      <AboutSection />
-      <TechnologyCard />
-      <Projects />
-      <Contacts /> 
+      <VStack
+        w="100%"
+        maxW="65rem"
+        padding="2rem 3rem 3rem 3rem"
+      >
+        <ProfileSection />
+        <AboutSection />
+        <TechnologyCard />
+        <Projects />
+        <Contacts />
+      </VStack>
     </VStack>
   );
 }
