@@ -39,6 +39,7 @@ export default function NavBar() {
       backgroundColor="#8989898c"
       backdropFilter="blur(10px)"
       padding="0 2.5rem 0 2.5rem"
+      zIndex="4"
     >
 
       <Box 

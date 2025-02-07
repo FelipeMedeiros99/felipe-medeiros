@@ -37,31 +37,48 @@ export default function TechnologyCard() {
 
   return (
     
-    <VStack>
+    <VStack
+      width="100%"
+      padding={"3rem 10rem 3rem 10rem"}
+      backgroundColor="#414141"
+    >
     <Heading>
       Tecnologias que conheço
     </Heading>
-    <HStack>
-      {technologies.map((technology, index) => (
+    <HStack 
+      flexWrap="wrap"
+      alignItems="center"
+      justifyContent="center"
+    >
+      {technologies.map((technology) => (
         <VStack
-          justifyContent="space-between"
           key={technology.name}
-          w="200px"
-          h="200px"
-          bgColor="#6e6e6e"
+          justifyContent="flex-start"
+          w="20rem"
+          h="10rem"
+          borderRadius="1rem"
+          position="relative"
+          margin="1rem"
+          boxShadow="0 0 0.5rem #00000066"
+          backgroundColor="#535353"
         >
           <VStack
-            h="100%"
-            w="100%"
+            h="5rem"
             justifyContent="center"
+            margin="1.5rem 0 0 0 "
           >
             <Image
+              borderRadius="1rem"
+              h="100%"
               src={technology.image}
-              width="150px"
-              padding="10px"
             />
           </VStack>
-          <Text>
+          <Text
+            position="absolute"
+            bottom="0.5rem"
+            fontSize="1.5rem"
+            fontWeight="700"
+          >
             {technology.name}
           </Text>
         </VStack>
