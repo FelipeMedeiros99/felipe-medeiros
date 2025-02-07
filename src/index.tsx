@@ -4,7 +4,8 @@ import { Provider } from './components/ui/provider';
 
 import App from './App';
 
-import "./index.css"
+import "./styles/reset.css"
+import "./styles/index.css"
 
 const root = ReactDOM.createRoot(document.getElementById('root') as any);
 root.render(

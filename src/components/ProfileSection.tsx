@@ -1,4 +1,4 @@
-import { HStack, Image, Box, Text } from "@chakra-ui/react"
+import { HStack, Image, VStack, Heading, Box, Text } from "@chakra-ui/react"
 
 
 import mySelf from "../assets/images/profileImages/mySelf.png";
@@ -6,26 +6,37 @@ import mySelf from "../assets/images/profileImages/mySelf.png";
 
 export default function ProfileSection() {
   return (
-    <HStack id="profile">
-      <Image
-        src={mySelf}
-        h="300px"
-      />
-      <Box 
+    <HStack 
+      id="profile"
+      marginTop="80px"
+      w="100%"
+      justifyContent="center"
+    >
+      <Box
+        h="400px"
       >
-        <Text>
-          Olá!
-        </Text>
-        <Text>
-          Eu sou
-        </Text>
-        <Text>
-          Felipe Medeiros Castello Branco
-        </Text>
-        <Text>
-          Desenvolvedor fullstack
-        </Text>
+        <Image
+          h="100%"
+          src={mySelf}
+        />
       </Box>
+      <VStack 
+        fontSize="40px"
+        h="400px"
+        display="flex"
+        justifyContent="center"
+        fontWeight="700"
+      >
+        <Heading>
+          Olá!
+        </Heading>
+        <Heading>
+          Eu sou <Text as="span" color="#8adcfb">Felipe Medeiros</Text> 
+        </Heading>
+        <Heading>
+          Desenvolvedor fullstack
+        </Heading>
+      </VStack>
     </HStack>
   )
 }
