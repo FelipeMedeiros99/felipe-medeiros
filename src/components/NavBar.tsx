@@ -1,4 +1,5 @@
-import { HStack, Link, Image, Box } from "@chakra-ui/react";
+import { HStack, Image, Box } from "@chakra-ui/react";
+import { Link } from "react-scroll";
 
 import { hrefs } from "../data";
 
@@ -33,18 +34,25 @@ export default function NavBar() {
           hrefs.map((href)=>(
             <Link 
               key={href.id}
-              href={href.id}
-              fontWeight="700"
-              fontSize="1.25rem"
-              display="flex"
-              _hover={{
-                cursor: "pointer", 
-                fontSize: "1.5rem",
-                textDecor: "none"
-              }}
+              to={href.id}
+              smooth={true}
+              duration={500}
+              offset={-80}
             >
-              {href.title}
-              {href.icon}
+              <HStack
+                fontWeight="700"
+                fontSize="1.25rem"
+                display="flex"
+                _hover={{
+                  cursor: "pointer", 
+                  fontSize: "1.5rem",
+                  textDecor: "none"
+              }}
+              >
+                
+                {href.title}
+                {href.icon}
+              </HStack>
             </Link>
           ))
         }

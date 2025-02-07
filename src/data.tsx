@@ -118,27 +118,27 @@ export const contacts = [
 export const hrefs = [
   {
     title: "Início",
-    id: "#profile",
+    id: "profile",
     icon: <FaHome /> 
   },
   {
     title: "Sobre",
-    id: "#about",
+    id: "about",
     icon: <IoIosInformationCircleOutline /> 
   },
   {
     title: "Tecnologias",
-    id: "#tech",
+    id: "tech",
     icon: <FaReact /> 
   },
   {
     title: "Projetos",
-    id: "#projects",
+    id: "projects",
     icon: <FaRegFolder />
   },
   {
     title: "Contatos",
-    id: "#contacts",
+    id: "contacts",
     icon: <MdOutlinePhone />
   }
 ]
