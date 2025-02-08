@@ -21,13 +21,16 @@ export default function Projects() {
         {
           projects.map((project) => (
             <VStack
+              bgColor="#2b2b2c"
               key={project.name}
-              boxShadow="0 0 0.5rem #00000066"
+              boxShadow="0 0 1rem black"
               w="100%"
               maxW="30rem"
-              h={{base: "auto", md: "37rem"}}
+              h={{base: "auto", md: "38rem"}}
               position="relative"
               margin="1rem"
+              padding="1rem"
+              borderRadius="1rem"
             >
               <VStack h="14rem" w="100%" padding="3rem" bgColor="#a8a8a8">
                 <Image src={project.img} h="100%" borderRadius="1rem"/>
@@ -39,7 +42,7 @@ export default function Projects() {
 
               <Text 
                 padding={{base: "0.5rem", md:"0 1rem 0 1rem"}} 
-                fontSize="1.125rem" 
+                fontSize={{base: "0.75rem", md: "1.125rem" }}
                 textAlign="justify"
                 overflowY="auto"
                 height="7rem"
