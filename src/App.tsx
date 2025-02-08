@@ -25,13 +25,13 @@ function App() {
     >
       <NavBar />
       <ProfileSection />
-      <AboutSection />
+      {/* <AboutSection />
       <TechnologyCard />
       <Projects />
-      <Contacts />
-      {/* <Text zIndex={"8"}>
+      <Contacts /> */}
+      <Text zIndex={"8"}>
         {brackPoint}
-      </Text> */}
+      </Text>
     </VStack>
   );
 }

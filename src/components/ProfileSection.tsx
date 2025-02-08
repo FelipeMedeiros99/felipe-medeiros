@@ -1,48 +1,29 @@
-import { HStack, Image, VStack, Heading, Box, Text, useBreakpoint } from "@chakra-ui/react"
+import { HStack, Image, VStack, Heading, Box, Text } from "@chakra-ui/react"
 import { useBreakpointValue } from "@chakra-ui/react"
 
 export default function ProfileSection() {
-  return (
 
+  return (
     <HStack
-      flexDir={{
-        base: "column",
-        md: "row"
-      }}
-      paddingTop="5rem"
+      flexDir={{ base: "column", md: "row" }}
+      padding={{base: "5rem 0 1rem 0", md: "5rem 0 0 0"}}
       id="profile"
       w="100%"
       h="100vh"
-      justifyContent={{
-        base: "center",
-        md: "flex-start"
-      }}
+      justifyContent={{ base: "center", md: "flex-start" }}
       bgGradient="to-t"
       gradientFrom="#514e4e"
       gradientTo="black"
     >
-      <Box
-        height={{ base: "25rem", md: "100%" }}
-      >
-        <Image
-          height="100%"
-          src="./images/profileImages/mySelf.png"
-        />
+
+      <Box height={{ base: "25rem", md: "100%" }}>
+        <Image height="100%" src="./images/profileImages/mySelf.png" />
       </Box>
-      <VStack
-        minW="50%"
-      >
+
+      <VStack minW="50%" >
         <Heading
-          fontSize={{
-            "2xl": "5.5rem",
-            xl: "4.5rem",
-            lg: "3rem",
-            base: "2rem",
-          }}
-          textAlign={{
-            base: "center",
-            md: "left"
-          }}
+          fontSize={{ "2xl": "5.5rem", xl: "4.5rem", lg: "3rem", base: "2rem" }}
+          textAlign={{ base: "center", md: "left" }}
           fontWeight="700"
           as="h1"
         >
@@ -51,6 +32,8 @@ export default function ProfileSection() {
           Desenvolvedor web fullstack
         </Heading>
       </VStack>
+
+
     </HStack>
   )
 }
