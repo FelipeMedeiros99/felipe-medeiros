@@ -62,7 +62,7 @@ export default function Projects() {
                     h="2rem"
                     padding="0 1rem 0 1rem"
                   >
-                    <Text fontSize="1rem" color="black">{technology}</Text>
+                    <Text fontSize={{base: "0.75rem", md: "1rem"}} color="black">{technology}</Text>
                   </VStack>
                 ))}
               </HStack>
