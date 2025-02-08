@@ -1,8 +1,7 @@
-import { HStack } from "@chakra-ui/react";
+import { HStack, Box, Image } from "@chakra-ui/react";
 import { useState } from "react";
+import { MdOutlineMenu } from "react-icons/md";
 
-import NavButton from "./components/NavButton";
-import IconNavBar from "./components/IconNavBar";
 import OptionsNavBar from "./components/OptionsNavBar";
 
 
@@ -27,12 +26,19 @@ export default function NavBar() {
         zIndex="4"
       >
 
-        <IconNavBar />
+        <Box width="5rem" padding="1rem">
+          <Image src="./images/profileImages/simbol.png" />
+        </Box>
 
-        <NavButton
-          optionsVisibility={optionsVisibility}
-          setOptionsVisibility={setOptionsVisibility}
-        />
+        <Box
+          display={{ base: optionsVisibility ? "none" : "block", lg: "none" }}
+          padding="1rem"
+          fontSize="2rem"
+          onClick={() => setOptionsVisibility(true)}
+          zIndex={"5"}
+        >
+          <MdOutlineMenu />
+        </Box>
 
         <OptionsNavBar
           optionsVisibility={optionsVisibility}
