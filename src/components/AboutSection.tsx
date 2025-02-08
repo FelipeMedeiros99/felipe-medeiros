@@ -34,6 +34,7 @@ export default function AboutSection() {
 
       <Link href="./documents/curriculo.pdf" height="4rem" download >
         <Button
+          color="#000000"
           bgColor="#e6ff4a"
           width="10rem"
           height="3rem"

@@ -59,7 +59,7 @@ export default function Projects() {
                     h="2rem"
                     padding="0 1rem 0 1rem"
                   >
-                    <Text fontSize="1rem">{technology}</Text>
+                    <Text fontSize="1rem" color="black">{technology}</Text>
                   </VStack>
                 ))}
               </HStack>
@@ -72,6 +72,7 @@ export default function Projects() {
                 bottom={{ md: "1.5rem"}}
                 h="3rem"
                 marginBottom={{base: "1rem", md: "0"}}
+                color="#000000"
               >
                 {
                   project.url &&

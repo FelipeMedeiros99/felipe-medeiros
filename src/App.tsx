@@ -11,6 +11,7 @@ function App() {
   return (
     <VStack
       w="100%"
+      color="white"
     >
       <NavBar />
       <ProfileSection />
