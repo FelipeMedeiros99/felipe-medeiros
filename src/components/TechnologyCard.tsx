@@ -23,7 +23,7 @@ export default function TechnologyCard() {
     <VStack
       id="tech"
       width="100%"
-      padding={"3rem 10rem 3rem 10rem"}
+      padding={"3rem"}
       backgroundColor="#414141"
       scrollMarginTop="5rem"
     >
