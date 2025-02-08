@@ -63,7 +63,7 @@ export default function OptionsNavBar({ optionsVisibility, setOptionsVisibility 
                 onClick={() => { setOptionsVisibility(false) }}
                 to={href.id}
                 smooth={true}
-                duration={500}
+                duration={1000}
                 offset={-80}
               >
                 <HStack
