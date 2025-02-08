@@ -11,14 +11,12 @@ export default function Contacts() {
       paddingTop="2rem"
       scrollMarginTop="5rem"
     >
-    <Heading 
-      fontSize="4rem"
-    >
+    <Heading as="h2" fontSize={{ base: "3rem", md: "4rem" }} textAlign="center">
       Contatos
     </Heading>
     <HStack
-      w="30rem"
-      h="10rem"
+      w={{base: "90%", sm: "30rem"}}
+      h={{base: "7rem", sm: "10rem"}}
       alignItems="center"
       justifyContent="space-between"
     >
@@ -30,14 +28,14 @@ export default function Contacts() {
         display="flex"
         justifyContent="center"
         alignItems="center"
-        w="4rem"
-        h="4rem"
+        w={{base: "3rem", sm: "4rem"}}
+        h={{base: "3rem", sm: "4rem"}}
         padding="0.5rem"
         borderRadius="50rem"
         bgColor="white"
         _hover={{
-          width: "5rem",
-          height: "5rem"
+          width: {base:"4rem", sm: "5rem"},
+          height: {base:"4rem", sm: "5rem"}
         }}
       >
         <Image 
