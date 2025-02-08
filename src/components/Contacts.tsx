@@ -12,7 +12,7 @@ export default function Contacts() {
       scrollMarginTop="5rem"
     >
     <Heading 
-      as="h2"
+      fontSize="4rem"
     >
       Contatos
     </Heading>

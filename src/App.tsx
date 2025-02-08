@@ -25,8 +25,8 @@ function App() {
     >
       <NavBar />
       <ProfileSection />
-      {/* <AboutSection />
-      <TechnologyCard />
+      <AboutSection />
+      {/* <TechnologyCard />
       <Projects />
       <Contacts /> */}
       <Text zIndex={"8"}>
