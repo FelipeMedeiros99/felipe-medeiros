@@ -26,9 +26,9 @@ function App() {
       <NavBar />
       <ProfileSection />
       <AboutSection />
-      {/* <TechnologyCard />
-      <Projects />
-      <Contacts /> */}
+      <TechnologyCard />
+      {/* <Projects /> */}
+      {/* <Contacts /> */}
       <Text zIndex={"8"}>
         {brackPoint}
       </Text>

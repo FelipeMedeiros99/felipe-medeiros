@@ -19,7 +19,7 @@ const technologies = [
 
 export default function TechnologyCard() {
   return (
-    
+
     <VStack
       id="tech"
       width="100%"
@@ -27,48 +27,44 @@ export default function TechnologyCard() {
       backgroundColor="#414141"
       scrollMarginTop="5rem"
     >
-    <Heading>
-      Tecnologias que conheço
-    </Heading>
-    <HStack 
-      flexWrap="wrap"
-      alignItems="center"
-      justifyContent="center"
-    >
-      {technologies.map((technology) => (
-        <VStack
-          key={technology.name}
-          justifyContent="flex-start"
-          w="20rem"
-          h="10rem"
-          borderRadius="1rem"
-          position="relative"
-          margin="1rem"
-          boxShadow="0 0 0.5rem #00000066"
-          backgroundColor="#535353"
-        >
+      <Heading as="h2" fontSize={{ base: "3rem", md: "4rem" }} textAlign="center">
+        Minhas habilidades
+      </Heading>
+      <HStack flexWrap="wrap" alignItems="center" justifyContent="center">
+        {technologies.map((technology) => (
           <VStack
-            h="5rem"
-            justifyContent="center"
-            margin="1.5rem 0 0 0 "
+            key={technology.name}
+            justifyContent="flex-start"
+            w="20rem"
+            h="10rem"
+            borderRadius="1rem"
+            position="relative"
+            margin="1rem"
+            boxShadow="0 0 0.5rem #00000066"
+            backgroundColor="#535353"
           >
-            <Image
-              borderRadius="1rem"
-              h="100%"
-              src={technology.image}
-            />
+            <VStack
+              h="5rem"
+              justifyContent="center"
+              margin="1.5rem 0 0 0 "
+            >
+              <Image
+                borderRadius="1rem"
+                h="100%"
+                src={technology.image}
+              />
+            </VStack>
+            <Text
+              position="absolute"
+              bottom="0.5rem"
+              fontSize="1.5rem"
+              fontWeight="700"
+            >
+              {technology.name}
+            </Text>
           </VStack>
-          <Text
-            position="absolute"
-            bottom="0.5rem"
-            fontSize="1.5rem"
-            fontWeight="700"
-          >
-            {technology.name}
-          </Text>
-        </VStack>
-      ))}
-    </HStack>
-  </VStack>
+        ))}
+      </HStack>
+    </VStack>
   )
 }
