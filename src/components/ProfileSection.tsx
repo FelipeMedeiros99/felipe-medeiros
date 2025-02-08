@@ -2,14 +2,6 @@ import { HStack, Image, VStack, Heading, Box, Text, useBreakpoint } from "@chakr
 import { useBreakpointValue } from "@chakra-ui/react"
 
 export default function ProfileSection() {
-  const brackPoint = useBreakpointValue({
-    base: 'base', // 0px
-    sm: 'sm', // ~480px
-    md: 'md', // ~768px
-    lg: 'lg', // ~992px
-    xl: 'xl', // ~1280px
-    '2xl': '2xl', // ~1536px
-  })
   return (
 
     <HStack
@@ -58,9 +50,6 @@ export default function ProfileSection() {
           Eu sou <Text as="span" color="#8adcfb">Felipe Medeiros</Text> <br />
           Desenvolvedor web fullstack
         </Heading>
-        <Text>
-          {brackPoint}
-        </Text>
       </VStack>
     </HStack>
   )
