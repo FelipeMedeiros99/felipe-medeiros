@@ -10,6 +10,7 @@ export default function Contacts() {
       w="100%"  
       paddingTop="2rem"
       scrollMarginTop="5rem"
+      backgroundColor="#09090B"
     >
     <Heading as="h2" fontSize={{ base: "3rem", md: "4rem" }} textAlign="center">
       Contatos
