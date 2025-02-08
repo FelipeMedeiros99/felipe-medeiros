@@ -27,7 +27,7 @@ function App() {
       <ProfileSection />
       <AboutSection />
       <TechnologyCard />
-      {/* <Projects /> */}
+      <Projects />
       {/* <Contacts /> */}
       <Text zIndex={"8"}>
         {brackPoint}
