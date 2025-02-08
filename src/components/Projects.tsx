@@ -83,7 +83,7 @@ export default function Projects() {
                     target="_blank"
                     w="9rem"
                   >
-                    <Button color="white" backgroundColor="white" w="8rem" h="2.5rem" _hover={{ width: "9rem",h: "3rem"}}>
+                    <Button color="black" backgroundColor="white" w="8rem" h="2.5rem" _hover={{ width: "9rem",h: "3rem"}}>
                       <MdOutlineLink /> Ver site
                     </Button>
                   </Link>
@@ -95,7 +95,7 @@ export default function Projects() {
                   target="_blank"
                   w="9rem"
                 >
-                  <Button color="white" backgroundColor="white" w="8rem" h="2.5rem" _hover={{ width: "9rem",   h: "3rem" }}>
+                  <Button color="black" backgroundColor="white" w="8rem" h="2.5rem" _hover={{ width: "9rem",   h: "3rem" }}>
                     <FaGithub /> Ver projeto
                   </Button>
                 </Link>
