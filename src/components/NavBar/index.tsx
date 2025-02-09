@@ -16,7 +16,7 @@ export default function NavBar() {
     <>
       <HStack
         w="100%"
-        h="5rem"
+        h={{base: "3.5rem", md: "5rem"}}
         justifyContent="space-between"
         position="fixed"
         top="0"
