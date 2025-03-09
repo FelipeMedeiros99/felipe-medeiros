@@ -95,6 +95,31 @@ import { MdOutlinePhone } from "react-icons/md";
 
 export const projects = [
   {
+    name: "Cursos online",
+    img: "./images/projectsImages/cursos_online.png",
+    url: "http://cursos_online.felipemedeiros.dev.br/",
+    functions: [
+      "Login de usuário sem senha, apenas com nome salvo no banco",
+      "Visualização de cursos disponíveis e detalhes individuais",
+      "Cadastro de novos cursos com informações detalhadas",
+      "Gerenciamento do carrinho: adicionar, remover e finalizar compra"  
+    ],
+    technologies: ["Next", "ChakraUI", "Docker"],
+    github: "https://github.com/FelipeMedeiros99/Gerenciamento-de-cursos-frontend"
+  },
+  {
+    name: "Cursos online API",
+    img: "./images/projectsImages/cursos_online.png",
+    url: "",
+    functions: [
+      "Armazenamento de dados de compras",
+      "Rotas de edição, exclusão e adição de cursos",
+      "Operações de CRUD",
+    ],
+    technologies: ["Nest", "TypeScript", "PostgreSQL", "Docker"],
+    github: "https://github.com/FelipeMedeiros99/Gerenciamento-de-cursos-backend"
+  },
+  {
     name: "Track-it",
     img: './images/projectsImages/track-it.svg',
     url: "https://track-it-seven-amber.vercel.app/",
@@ -143,31 +168,6 @@ export const projects = [
     github: "https://github.com/FelipeMedeiros99/school-spreadsheet-backend/tree/main"
   },
   {
-    name: "Gerenciamento de Cursos",
-    img: "./images/projectsImages/inaed_logo.png",
-    url: "https://gerenciamento-de-cursos-frontend-1muo.vercel.app/",
-    functions: [
-      "Login de usuário sem senha, apenas com nome salvo no banco",
-      "Visualização de cursos disponíveis e detalhes individuais",
-      "Cadastro de novos cursos com informações detalhadas",
-      "Gerenciamento do carrinho: adicionar, remover e finalizar compra"  
-    ],
-    technologies: ["Next", "ChakraUI"],
-    github: "https://github.com/FelipeMedeiros99/Gerenciamento-de-cursos-frontend"
-  },
-  {
-    name: "Gerenciamento de cursos API",
-    img: "./images/projectsImages/inaed_logo.png",
-    url: "",
-    functions: [
-      "Armazenamento de dados de compras",
-      "Rotas de edição, exclusão e adição de cursos",
-      "Operações de CRUD",
-    ],
-    technologies: ["Nest", "TypeScript", "PostgreSQL"],
-    github: "https://github.com/FelipeMedeiros99/Gerenciamento-de-cursos-backend"
-  },
-  {
     name: "Cardápio Tambaú",
     img: "./images/projectsImages/tambau.png",
     url: "https://cardapio-tambau.vercel.app/",
@@ -193,8 +193,6 @@ export const projects = [
     github: "https://github.com/FelipeMedeiros99/Cine-flex/tree/main"
   },
 ];
-
-
 
 export const contacts = [
   {

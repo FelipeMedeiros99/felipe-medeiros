@@ -14,7 +14,10 @@ const technologies = [
   { name: "Cypress", image: "/images/technologiesImages/cypress.png" },
   { name: "GitHub", image: "/images/technologiesImages/github.png" },
   { name: "Git", image: "/images/technologiesImages/git.png" },
-  { name: "AWS", image: "/images/technologiesImages/aws.png" }
+  { name: "AWS", image: "/images/technologiesImages/aws.png" },
+  { name: "Hostinger", image: "/images/technologiesImages/hostinger.png" },
+  { name: "Docker", image: "/images/technologiesImages/docker.png" },
+  
 ];
 
 export default function TechnologyCard() {
