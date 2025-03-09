@@ -14,7 +14,7 @@ export default function Projects() {
       padding={{ base: "0", md: "3rem" }}
       scrollMarginTop="5rem"
     >
-      <Heading as="h2" fontSize={{ base: "3rem", md: "4rem" }} textAlign="center">
+      <Heading as="h2" fontSize={{ base: "3rem", md: "4rem" }} textAlign="center" marginTop="1rem">
         Principais projetos
       </Heading>
 
