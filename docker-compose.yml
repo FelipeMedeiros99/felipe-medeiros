@@ -1,0 +1,25 @@
+services:
+  felipe-medeiros-curriculo:
+    build: .
+    image: felipe-medeiros-curriculo
+    ports:
+      - "80:80"
+    networks:
+      - web
+  
+  nginx:
+    image: nginx:alpine
+    volumes:
+      - ./nginx.conf:/etc/conf.d/nginx.conf
+    ports:
+      - "80:80"
+    depends_on:
+      - felipe-medeiros-curriculo
+    networks:
+      - web
+
+networks:
+  web: 
+    driver: bridge
+  
+    
