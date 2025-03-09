@@ -1,5 +1,6 @@
 services:
   felipe-medeiros-curriculo:
+    container_name: felipe-medeiros-curriculo
     build: .
     image: felipe-medeiros-curriculo
     ports:
