@@ -7,19 +7,7 @@ services:
       - "3000:3000"
     networks:
       - web
-  
-  nginx:
-    image: nginx:alpine
-    container_name: nginx-container
-    volumes:
-      - ~/nginx/nginx.conf:/etc/nginx/nginx.conf
-    ports:
-      - "80:80"
-    depends_on:
-      - felipe-medeiros-curriculo
-    networks:
-      - web
-
+      
 networks:
   web: 
     driver: bridge
