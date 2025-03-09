@@ -10,6 +10,7 @@ services:
   
   nginx:
     image: nginx:alpine
+    container_name: nginx-felipe-curriculo
     volumes:
       - ./nginx.conf:/etc/conf.d/nginx.conf
     ports:
