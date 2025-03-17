@@ -43,7 +43,7 @@ export const projects = [
       "Índice de pesquisa para navegação rápida",
       "Edição e exclusão de registros"
     ],
-    technologies: ["TypeScript", "React", "chakra UI", "AWS"],
+    technologies: ["TypeScript", "React", "chakra UI", "AWS", "Hostinger", "Docker"],
     github: "https://github.com/FelipeMedeiros99/school-spreadsheet-front"
   },
   {
@@ -60,7 +60,7 @@ export const projects = [
       "Edição de estudante com atualização por ID",
       "Remoção de estudante do banco de dados"
     ],
-    technologies: ["TypeScript", "Express", "Bcrypt", "Joi", "PostgreSQL", "Prisma"],
+    technologies: ["TypeScript", "Express", "Bcrypt", "Joi", "PostgreSQL", "Prisma", "Docker"],
     github: "https://github.com/FelipeMedeiros99/school-spreadsheet-backend/tree/main"
   },
   {
