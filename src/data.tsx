@@ -64,6 +64,19 @@ export const projects = [
     github: "https://github.com/FelipeMedeiros99/school-spreadsheet-backend/tree/main"
   },
   {
+    name: "App Saúde mental",
+    img: "./images/projectsImages/saude-mental.png",
+    url: "https://app-saude-mental.vercel.app/sign-in",
+    functions: [
+      "Postar anotações e estado emocional",
+      "Vídeos motivacionais",
+      "Entrar em contato com atendente",
+      "Obs: Protótipo de projeto"
+    ],
+    technologies: ["Nest", "TypeScript", "PostgreSQL", "Docker"],
+    github: "https://github.com/FelipeMedeiros99/Gerenciamento-de-cursos-backend"
+  },
+  {
     name: "Track-it",
     img: './images/projectsImages/track-it.svg',
     url: "https://track-it-seven-amber.vercel.app/",
