@@ -97,7 +97,7 @@ export const projects = [
   {
     name: "Cursos online",
     img: "./images/projectsImages/cursos_online.png",
-    url: "http://cursos_online.felipemedeiros.dev.br/",
+    url: "http://cursos-online.felipemedeiros.dev.br/sign-in",
     functions: [
       "Login de usuário sem senha, apenas com nome salvo no banco",
       "Visualização de cursos disponíveis e detalhes individuais",
@@ -120,24 +120,9 @@ export const projects = [
     github: "https://github.com/FelipeMedeiros99/Gerenciamento-de-cursos-backend"
   },
   {
-    name: "Track-it",
-    img: './images/projectsImages/track-it.svg',
-    url: "https://track-it-seven-amber.vercel.app/",
-    functions: [
-      "Cadastro e login",
-      "Adicionar hábitos",
-      "Marcar hábitos como feitos",
-      "Remover hábitos",
-      "Visualizar progresso",
-      "Interface intuitiva"
-    ],
-    technologies: ["react", "styled-components"],
-    github: "https://github.com/FelipeMedeiros99/track-it"
-  },
-  {
     name: "Agenda escolar",
     img: './images/projectsImages/school-spreadsheet.png',
-    url: "http://school-spreadsheet-front.s3-website-sa-east-1.amazonaws.com/sign-in",
+    url: "http://agenda-escolar.felipemedeiros.dev.br/sign-in",
     functions: [
       "Design responsivo",
       "Validação de dados nos formulários",
@@ -166,6 +151,21 @@ export const projects = [
     ],
     technologies: ["TypeScript", "Express", "Bcrypt", "Joi", "PostgreSQL", "Prisma"],
     github: "https://github.com/FelipeMedeiros99/school-spreadsheet-backend/tree/main"
+  },
+  {
+    name: "Track-it",
+    img: './images/projectsImages/track-it.svg',
+    url: "https://track-it-seven-amber.vercel.app/",
+    functions: [
+      "Cadastro e login",
+      "Adicionar hábitos",
+      "Marcar hábitos como feitos",
+      "Remover hábitos",
+      "Visualizar progresso",
+      "Interface intuitiva"
+    ],
+    technologies: ["react", "styled-components"],
+    github: "https://github.com/FelipeMedeiros99/track-it"
   },
   {
     name: "Cardápio Tambaú",
