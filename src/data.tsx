@@ -31,19 +31,6 @@ export const projects = [
     github: "https://github.com/FelipeMedeiros99/maranhae-tour.git"
   },
   {
-    name: "Bot De Respostas Whatsapp",
-    img: "./images/projectsImages/maranhae_tour.png",
-    url: "https://maranhaetour.com.br",
-    functions: [
-      "Login de usuário sem senha, apenas com nome salvo no banco",
-      "Visualização de cursos disponíveis e detalhes individuais",
-      "Cadastro de novos cursos com informações detalhadas",
-      "Gerenciamento do carrinho: adicionar, remover e finalizar compra"
-    ],
-    technologies: ["Next", "Tailwind", "typescript"],
-    github: "git@github.com:FelipeMedeiros99/whatsapp-automation-backend.git"
-  },
-  {
     name: "Cursos online",
     img: "./images/projectsImages/cursos_online.png",
     url: "http://cursos-online.felipemedeiros.dev.br/sign-in",
