@@ -5,6 +5,44 @@ import { FaRegFolder } from "react-icons/fa";
 import { MdOutlinePhone } from "react-icons/md";
 
 export const projects = [
+
+  {
+    name: "Automação de Atendimento (WhatsApp Bot)",
+    img: "./images/projectsImages/wpp-icon.png",
+    url: null,
+    functions: [
+      "Atendimento 24/7 com respostas automáticas para dúvidas comuns (FAQs).",
+      "Integração direta com a API do Google Gemini para interpretação de linguagem natural.",
+      "Geração de respostas dinâmicas e humanizadas usando IA para simular uma conversa real.",
+      "Persistência do histórico de conversa em banco de dados SQLite para manter o contexto do diálogo com a IA.",
+    ],
+    technologies: ["Express", "Gemini API"],
+    github: "https://github.com/FelipeMedeiros99/whatsapp-automation-backend.git"
+  },
+
+  {
+    name: "Maranhãe Tour",
+    img: "./images/projectsImages/maranhae_tour.png",
+    url: "https://maranhaetour.com.br",
+    functions: [
+      "Listagem e visualização detalhada de passeios turísticos.",
+    ],
+    technologies: ["Next.js", "Tailwind CSS", "TypeScript", "NestJS", "Prisma", "PostgreSQL"],
+    github: "https://github.com/FelipeMedeiros99/maranhae-tour.git"
+  },
+  {
+    name: "Bot De Respostas Whatsapp",
+    img: "./images/projectsImages/maranhae_tour.png",
+    url: "https://maranhaetour.com.br",
+    functions: [
+      "Login de usuário sem senha, apenas com nome salvo no banco",
+      "Visualização de cursos disponíveis e detalhes individuais",
+      "Cadastro de novos cursos com informações detalhadas",
+      "Gerenciamento do carrinho: adicionar, remover e finalizar compra"
+    ],
+    technologies: ["Next", "Tailwind", "typescript"],
+    github: "git@github.com:FelipeMedeiros99/whatsapp-automation-backend.git"
+  },
   {
     name: "Cursos online",
     img: "./images/projectsImages/cursos_online.png",
@@ -13,7 +51,7 @@ export const projects = [
       "Login de usuário sem senha, apenas com nome salvo no banco",
       "Visualização de cursos disponíveis e detalhes individuais",
       "Cadastro de novos cursos com informações detalhadas",
-      "Gerenciamento do carrinho: adicionar, remover e finalizar compra"  
+      "Gerenciamento do carrinho: adicionar, remover e finalizar compra"
     ],
     technologies: ["Next", "ChakraUI", "Docker"],
     github: "https://github.com/FelipeMedeiros99/Gerenciamento-de-cursos-frontend"
